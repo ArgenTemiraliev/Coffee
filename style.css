@@ -291,6 +291,7 @@ header{
 }
 
 .testimonials-section .testimonial {
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;
@@ -455,12 +456,15 @@ header{
     font-size: var(--font-size-1);
 }
 
-.footer-section .social-link-list .social-link:hover {
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link .separatork {
     color: var(--secondary-color);
 }
 
-.footer-section .policy-text .policy-link {
-    
+.footer-section .policy-text  {
+    margin: 0 5px;
+    color: var(--white-color);
+ 
 }
 
 
@@ -613,6 +617,11 @@ header{
 
     .testimonials-section .swiper-slide-button  {
         display: none;
+    }
+
+    .footer-section .section-content {
+        flex-direction: column;
+        gap: 20px;
     }
 
 
